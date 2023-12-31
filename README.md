@@ -1,1 +1,0 @@
-**Vale Rainbow Central Documentation**
