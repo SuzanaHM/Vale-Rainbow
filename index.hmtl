@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página</title>
+    <title>Vale Rainbow Documentation</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Bem-vindo à Minha Página Simples</h1>
+        <h1>Bem-vindo à Documentação Central do Vale Rainbow</h1>
     </header>
 
     <section>
         <h2>Sobre</h2>
-        <p>Esta é uma página HTML simples. Sinta-se à vontade para personalizá-la de acordo com suas necessidades.</p>
+        <p>Esta é a página central de documentação para o Vale Rainbow, onde você pode encontrar informações essenciais, incluindo os Termos e Condições e a Política de Privacidade do serviço.</p>
     </section>
 
     <section>
@@ -41,6 +41,23 @@
         <h2>Licença</h2>
         <p>Este projeto é licenciado sob a Licença MIT - veja o arquivo <a href="LICENSE.md">LICENSE.md</a> para mais detalhes.</p>
     </section>
+
+    <!-- Botão para mudar o idioma -->
+    <button onclick="changeLanguage()">Change Language</button>
+
+    <script>
+        function changeLanguage() {
+            // Verifica o idioma atual da página
+            var currentLang = document.documentElement.lang;
+
+            // Troca o idioma para inglês se estiver em português, e vice-versa
+            if (currentLang === 'pt') {
+                document.documentElement.lang = 'en';
+            } else {
+                document.documentElement.lang = 'pt';
+            }
+        }
+    </script>
 
 </body>
 
