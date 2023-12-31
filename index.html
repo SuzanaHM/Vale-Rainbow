@@ -1,21 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olá, Mundo!</title>
+    <title>Escolha de Idioma</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Olá, Mundo!</h1>
+        <h1>Escolha de Idioma</h1>
     </header>
 
     <section>
-        <p>Esta é uma página HTML simples que exibe a mensagem clássica: Olá, Mundo!</p>
+        <p>Selecione o idioma:</p>
+        <button onclick="changeLanguage('pt')">Português</button>
+        <button onclick="changeLanguage('en')">Inglês</button>
     </section>
+
+    <section id="content">
+        <p>Conteúdo da página em Português.</p>
+    </section>
+
+    <script>
+        function changeLanguage(language) {
+            // Altera o idioma da página
+            document.documentElement.lang = language;
+
+            // Atualiza o conteúdo da página com base no idioma escolhido
+            if (language === 'pt') {
+                document.getElementById('content').innerHTML = '<p>Conteúdo da página em Português.</p>';
+            } else {
+                document.getElementById('content').innerHTML = '<p>Page content in English.</p>';
+            }
+        }
+    </script>
 
 </body>
 
