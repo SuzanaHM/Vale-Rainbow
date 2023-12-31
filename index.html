@@ -20,7 +20,31 @@
     </section>
 
     <section id="content">
-        <p>Conteúdo da página em Português.</p>
+        <!-- Tabela com os dados -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data de vigência</th>
+                    <th>Data de postagem</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+                    <td><a href="Arquivos/181223/PoliticaDePrivacidade_PT_BR.html" target="_blank">Termos e condições</a></td>
+                    <td>01/01/2024</td>
+                    <td>30/12/2023</td>
+                    <td>Não vigente</td>
+                </tr>
+                <tr>
+                    <td><a href="Arquivos/181223/PoliticaDePrivacidade_PT_BR.html" target="_blank">Termos e condições</a></td>
+                    <td>18/12/2023</td>
+                    <td>22/12/2023</td>
+                    <td>Vigente</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <script>
@@ -28,11 +52,37 @@
             // Altera o idioma da página
             document.documentElement.lang = language;
 
-            // Atualiza o conteúdo da página com base no idioma escolhido
+            // Atualiza o conteúdo da tabela com base no idioma escolhido
             if (language === 'pt') {
-                document.getElementById('content').innerHTML = '<p>Conteúdo da página em Português.</p>';
+                document.getElementById('tableBody').innerHTML = `
+                    <tr>
+                        <td><a href="Arquivos/181223/PoliticaDePrivacidade_PT_BR.html" target="_blank">Termos e condições</a></td>
+                        <td>01/01/2024</td>
+                        <td>30/12/2023</td>
+                        <td>Não vigente</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Arquivos/181223/PoliticaDePrivacidade_PT_BR.html" target="_blank">Termos e condições</a></td>
+                        <td>18/12/2023</td>
+                        <td>22/12/2023</td>
+                        <td>Vigente</td>
+                    </tr>
+                `;
             } else {
-                document.getElementById('content').innerHTML = '<p>Page content in English.</p>';
+                document.getElementById('tableBody').innerHTML = `
+                    <tr>
+                        <td><a href="Arquivos/181223/PrivacyPolicy_EN.html" target="_blank">Terms and conditions</a></td>
+                        <td>01/01/2024</td>
+                        <td>30/12/2023</td>
+                        <td>Not in force</td>
+                    </tr>
+                    <tr>
+                        <td><a href="Arquivos/181223/PrivacyPolicy_EN.html" target="_blank">Terms and conditions</a></td>
+                        <td>18/12/2023</td>
+                        <td>22/12/2023</td>
+                        <td>Effective</td>
+                    </tr>
+                `;
             }
         }
     </script>
