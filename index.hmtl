@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bem-vindo à Minha Página Simples</h1>
+    </header>
+
+    <section>
+        <h2>Sobre</h2>
+        <p>Esta é uma página HTML simples. Sinta-se à vontade para personalizá-la de acordo com suas necessidades.</p>
+    </section>
+
+    <section>
+        <h2>Conteúdo Adicional</h2>
+        <ul>
+            <li><a href="http://www.exemplo.com">Link Externo</a></li>
+            <li><img src="url_da_imagem.png" alt="Imagem de Exemplo"></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Como Contribuir</h2>
+        <ol>
+            <li>Faça um fork do repositório.</li>
+            <li>Crie uma nova branch: <code>git checkout -b sua-feature</code></li>
+            <li>Faça suas alterações e faça commit: <code>git commit -m 'Adicione sua feature'</code></li>
+            <li>Faça push para a branch: <code>git push origin sua-feature</code></li>
+            <li>Abra um Pull Request.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Licença</h2>
+        <p>Este projeto é licenciado sob a Licença MIT - veja o arquivo <a href="LICENSE.md">LICENSE.md</a> para mais detalhes.</p>
+    </section>
+
+</body>
+
+</html>
