@@ -1,0 +1,5 @@
+# app-ads.txt
+# Versão 1.0
+
+# Google AdMob
+google.com, pub-8817697198007711, DIRECT, f08c47fec0942fa0
